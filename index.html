@@ -5,10 +5,14 @@
 <body>
 	<script src="/blocksdk.js"></script>
     <script>
-      var sdk = new window.sfdc.BlockSDK();
-      // do something with the sdk
 
-      sdk.setSuperContent('This is super content: ' + html);
+function chosen() {
+     var sdk = new window.sfdc.BlockSDK();
+
+     alert("clicked");
+ }
+
+      
     </script>
 
 <p>
@@ -19,7 +23,7 @@ Select an image to from Sitecore CMS:
 <center>
 <table border="0">
 <tr>
-	<td><image src="http://image.s4.exct.net/lib/fe8e1574746203787c/m/1/690f4c77-ed42-46b5-a58f-dad7ebc0ca17.png" /></td>
+	<td><image onclick="javascript:chosen()" src="http://image.s4.exct.net/lib/fe8e1574746203787c/m/1/690f4c77-ed42-46b5-a58f-dad7ebc0ca17.png" /></td>
 </tr>
 
 <tr>
