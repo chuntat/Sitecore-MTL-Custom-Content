@@ -12,7 +12,13 @@ function chosen(image) {
     var fit = document.getElementById('scalefit').checked;
 
     alert(fit);
-    
+       
+        if(fit){
+  sdk.setContent("<center><img width:'100%' src='" + image + "'/></center>");
+
+    }else{
+    sdk.setContent("<center><img src='" + image + "'/></center>");
+ }
 
  }
 
