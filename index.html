@@ -3,13 +3,14 @@
 <head></head>
 
 <body>
-	<script src="/blocksdk.js"></script>
+	<script src="blocksdk.js"></script>
     <script>
 
-function chosen() {
-     var sdk = new window.sfdc.BlockSDK();
-
-     alert("clicked");
+function chosen(image) {
+	var sdk = new window.sfdc.BlockSDK();
+    
+    alert("clicked");
+    sdk.setContent(image);
  }
 
       
@@ -23,11 +24,11 @@ Select an image to from Sitecore CMS: update1
 <center>
 <table border="0">
 <tr>
-	<td><image onclick="javascript:chosen()" src="http://image.s4.exct.net/lib/fe8e1574746203787c/m/1/690f4c77-ed42-46b5-a58f-dad7ebc0ca17.png" /></td>
+	<td><image onclick="javascript:chosen('http://image.s4.exct.net/lib/fe8e1574746203787c/m/1/690f4c77-ed42-46b5-a58f-dad7ebc0ca17.png')" src="http://image.s4.exct.net/lib/fe8e1574746203787c/m/1/690f4c77-ed42-46b5-a58f-dad7ebc0ca17.png" /></td>
 </tr>
 
 <tr>
-	<td><image src="http://image.s4.exct.net/lib/fe8e1574746203787c/m/1/4c73b248-ab34-4ac7-9cf1-4f15ab894f97.png" /></td>
+	<td><image onclick="javascript:chosen('http://image.s4.exct.net/lib/fe8e1574746203787c/m/1/4c73b248-ab34-4ac7-9cf1-4f15ab894f97.png')" src="http://image.s4.exct.net/lib/fe8e1574746203787c/m/1/4c73b248-ab34-4ac7-9cf1-4f15ab894f97.png" /></td>
 </tr>
 
 </table>
