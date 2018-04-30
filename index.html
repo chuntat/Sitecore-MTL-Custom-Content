@@ -14,11 +14,11 @@ function chosen(image) {
     alert(fit);
        
         if(fit){
-  sdk.setContent("<center><img width:'100%' src='" + image + "'/></center>");
+  			sdk.setContent("<img width='100%' src='" + image + "'/>");
 
-    }else{
-    sdk.setContent("<center><img src='" + image + "'/></center>");
- }
+    	}else{
+    		sdk.setContent("<center><img src='" + image + "'/></center>");
+ 		}
 
  }
 
@@ -26,7 +26,7 @@ function chosen(image) {
     </script>
 
 <p>
-Select an image to from Sitecore CMS: update11
+Select an image to from Sitecore CMS: update13
 </p>
 <p>
 	<input type="checkbox" id="scalefit" value="Yes" >Scale to fit?</input>
