@@ -9,23 +9,18 @@
 function chosen(image) {
 	var sdk = new window.sfdc.BlockSDK();
     
-    var fit = document.getElementById('box').checked;
+    var fit = document.getElementById('scalefit').checked;
 
-    alert(image + " " +fit);
+    alert(image + " " + fit);
     
-    if(fit){
-  sdk.setContent("<center><img width:'100%' src='" + image + "'/></center>");
 
-    }else{
-    sdk.setContent("<center><img src='" + image + "'/></center>");
- }
  }
 
       
     </script>
 
 <p>
-Select an image to from Sitecore CMS: update9
+Select an image to from Sitecore CMS: update10
 </p>
 <p>
 	<input type="checkbox" name="scalefit" value="Yes" >Scale to fit?</input>
