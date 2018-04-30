@@ -11,6 +11,7 @@ function chosen(image) {
     sdk.setContent("");
 
     var fit = document.getElementById('scalefit').checked;
+    var acenter = document.getElementById('acenter').checked;
 
     alert(fit);
        
@@ -18,7 +19,12 @@ function chosen(image) {
   			sdk.setContent("<img width='100%' src='" + image + "'/>");
 
     	}else{
-    		sdk.setContent("<center><img src='" + image + "'/></center>");
+    		
+    		if(acenter){sdk.setContent("<center><img src='" + image + "'/></center>");}
+    		
+ 		else{
+ 			sdk.setContent("<img src='" + image + "'/>");
+ 		}
  		}
 
  }
@@ -26,14 +32,18 @@ function chosen(image) {
       
     </script>
 
+<img src="http://image.s4.exct.net/lib/fe8e1574746203787c/m/1/fb94acb7-0d4b-4e86-87c2-a14c7a00c227.png" />
 <p>
-Select an image to from Sitecore CMS: update13
+Select an image to from Sitecore CMS: update14
 </p>
 <p>
+	<table><tr><td>
 	<input type="checkbox" id="scalefit" value="Yes" >Scale to fit?</input>
+</td>
+<td><input type="checkbox" id="acenter" value="Yes" >Align to Center?</input></td>
+</tr>
 </p>
 
-<img src="http://image.s4.exct.net/lib/fe8e1574746203787c/m/1/fb94acb7-0d4b-4e86-87c2-a14c7a00c227.png" />
 <center>
 <table border="0" padding="5px">
 <tr>
