@@ -3,7 +3,63 @@
 <head></head>
 
 <body>
+
+<center>
+<img width="80%" src="http://image.s4.exct.net/lib/fe8e1574746203787c/m/1/6bc4b8b8-19f2-41d3-8081-129b7b5a01c8.png" />
+<p style="font-family:Helvetica">
+Select an image to from Sitecore CMS
+</p>
+<p>
+	<table><tr><td>
+	<input style="font-family:Helvetica" type="checkbox" id="scalefit" value="Yes" >Scale to fit</input>
+</td>
+<td><input style="font-family:Helvetica" type="checkbox" id="acenter" value="Yes" >Align to Center</input></td>
+</tr>
+</p>
+
+
+<table border="0" padding="5px">
+<tr>
+	<td><image onclick="javascript:chosen('http://image.s4.exct.net/lib/fe8e1574746203787c/m/1/690f4c77-ed42-46b5-a58f-dad7ebc0ca17.png')" src="http://image.s4.exct.net/lib/fe8e1574746203787c/m/1/690f4c77-ed42-46b5-a58f-dad7ebc0ca17.png" /></td>
+</tr>
+
+<tr>
+	<td><image onclick="javascript:chosen('http://image.s4.exct.net/lib/fe8e1574746203787c/m/1/4c73b248-ab34-4ac7-9cf1-4f15ab894f97.png')" src="http://image.s4.exct.net/lib/fe8e1574746203787c/m/1/4c73b248-ab34-4ac7-9cf1-4f15ab894f97.png" /></td>
+</tr>
+
+</table>
+
+<div class="row">
+  <div class="col-4">
+    <div class="list-group" id="list-tab" role="tablist">
+      <a class="list-group-item list-group-item-action active" id="list-home-list" data-toggle="list" href="#list-home" role="tab" aria-controls="home">Home</a>
+      <a class="list-group-item list-group-item-action" id="list-profile-list" data-toggle="list" href="#list-profile" role="tab" aria-controls="profile">Profile</a>
+      <a class="list-group-item list-group-item-action" id="list-messages-list" data-toggle="list" href="#list-messages" role="tab" aria-controls="messages">Messages</a>
+      <a class="list-group-item list-group-item-action" id="list-settings-list" data-toggle="list" href="#list-settings" role="tab" aria-controls="settings">Settings</a>
+    </div>
+  </div>
+  <div class="col-8">
+    <div class="tab-content" id="nav-tabContent">
+      <div class="tab-pane fade show active" id="list-home" role="tabpanel" aria-labelledby="list-home-list">...</div>
+      <div class="tab-pane fade" id="list-profile" role="tabpanel" aria-labelledby="list-profile-list">...</div>
+      <div class="tab-pane fade" id="list-messages" role="tabpanel" aria-labelledby="list-messages-list">...</div>
+      <div class="tab-pane fade" id="list-settings" role="tabpanel" aria-labelledby="list-settings-list">...</div>
+    </div>
+  </div>
+</div>
+
+</center>
+
+</body>
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script>window.jQuery || document.write('<script src="../../../../assets/js/vendor/jquery-slim.min.js"><\/script>')</script>
+    <script src="../../../../assets/js/vendor/popper.min.js"></script>
+    <script src="../../../../dist/js/bootstrap.min.js"></script>
+
+
 	<script src="/blocksdk.js"></script>
+
     <script>
 
 function chosen(image) {
@@ -31,32 +87,5 @@ function chosen(image) {
 
       
     </script>
-<center>
-<img width="80%" src="http://image.s4.exct.net/lib/fe8e1574746203787c/m/1/6bc4b8b8-19f2-41d3-8081-129b7b5a01c8.png" />
-<p style="font-family:Helvetica">
-Select an image to from Sitecore CMS
-</p>
-<p>
-	<table><tr><td>
-	<input style="font-family:Helvetica" type="checkbox" id="scalefit" value="Yes" >Scale to fit</input>
-</td>
-<td><input style="font-family:Helvetica" type="checkbox" id="acenter" value="Yes" >Align to Center</input></td>
-</tr>
-</p>
-
-
-<table border="0" padding="5px">
-<tr>
-	<td><image onclick="javascript:chosen('http://image.s4.exct.net/lib/fe8e1574746203787c/m/1/690f4c77-ed42-46b5-a58f-dad7ebc0ca17.png')" src="http://image.s4.exct.net/lib/fe8e1574746203787c/m/1/690f4c77-ed42-46b5-a58f-dad7ebc0ca17.png" /></td>
-</tr>
-
-<tr>
-	<td><image onclick="javascript:chosen('http://image.s4.exct.net/lib/fe8e1574746203787c/m/1/4c73b248-ab34-4ac7-9cf1-4f15ab894f97.png')" src="http://image.s4.exct.net/lib/fe8e1574746203787c/m/1/4c73b248-ab34-4ac7-9cf1-4f15ab894f97.png" /></td>
-</tr>
-
-</table>
-</center>
-
-</body>
 
 </html>
