@@ -2,77 +2,48 @@
 
 <head>
 	
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-<style>
-	
-.vertical-menu {
-    width: 200px; /* Set a width if you like */
-}
-
-.vertical-menu a {
-    background-color: #eee; /* Grey background color */
-    color: black; /* Black text color */
-    display: block; /* Make the links appear below each other */
-    padding: 12px; /* Add some padding */
-    text-decoration: none; /* Remove underline from links */
-}
-
-.vertical-menu a:hover {
-    background-color: #ccc; /* Dark grey background on mouse-over */
-}
-
-.vertical-menu a.active {
-    background-color: #4CAF50; /* Add a green color to the "active/current" link */
-    color: white;
-}
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 
 
-</style>
 
 </head>
 
 <body>
 
-<center>
 <img width="80%" src="http://image.s4.exct.net/lib/fe8e1574746203787c/m/1/6bc4b8b8-19f2-41d3-8081-129b7b5a01c8.png" />
 <p style="font-family:Helvetica">
 Select an image to from Sitecore CMS
 </p>
 <p>
-	<table><tr><td>
+
 	<input style="font-family:Helvetica" type="checkbox" id="scalefit" value="Yes" >Scale to fit</input>
-</td>
-<td><input style="font-family:Helvetica" type="checkbox" id="acenter" value="Yes" >Align to Center</input></td>
-</tr>
+<input style="font-family:Helvetica" type="checkbox" id="acenter" value="Yes" >Align to Center</input>
 </p>
 
 
-<table border="0" padding="5px">
-<tr>
-	<td width="30%"><image width="30%" onclick="javascript:chosen('http://image.s4.exct.net/lib/fe8e1574746203787c/m/1/690f4c77-ed42-46b5-a58f-dad7ebc0ca17.png')" src="http://image.s4.exct.net/lib/fe8e1574746203787c/m/1/690f4c77-ed42-46b5-a58f-dad7ebc0ca17.png" /></td><td align="left" width="70%">MTL image 1</td>
-</tr>
-
-<tr>
-	<td width="30%"><image width="30%" onclick="javascript:chosen('http://image.s4.exct.net/lib/fe8e1574746203787c/m/1/4c73b248-ab34-4ac7-9cf1-4f15ab894f97.png')" src="http://image.s4.exct.net/lib/fe8e1574746203787c/m/1/4c73b248-ab34-4ac7-9cf1-4f15ab894f97.png" /></td><td align="left" width="70%">MTL image 2</td>
-</tr>
-
-</table>
 
 
-<div class="vertical-menu">
-  <image onclick="javascript:chosen('http://image.s4.exct.net/lib/fe8e1574746203787c/m/1/690f4c77-ed42-46b5-a58f-dad7ebc0ca17.png')" src="http://image.s4.exct.net/lib/fe8e1574746203787c/m/1/690f4c77-ed42-46b5-a58f-dad7ebc0ca17.png" />
-  <image onclick="javascript:chosen('http://image.s4.exct.net/lib/fe8e1574746203787c/m/1/4c73b248-ab34-4ac7-9cf1-4f15ab894f97.png')" src="http://image.s4.exct.net/lib/fe8e1574746203787c/m/1/4c73b248-ab34-4ac7-9cf1-4f15ab894f97.png" /><a href="#">Link 2</a>
-  <a href="#">Link 3</a>
-  <a href="#">Link 4</a>
+  <div class="col-8">
+    <div class="list-group" id="list-tab" role="tablist">
+      <a class="list-group-item list-group-item-action" id="list-home-list" data-toggle="list" href="#list-home" role="tab" aria-controls="home"><image width="20%" onclick="javascript:chosen('http://image.s4.exct.net/lib/fe8e1574746203787c/m/1/690f4c77-ed42-46b5-a58f-dad7ebc0ca17.png')" src="http://image.s4.exct.net/lib/fe8e1574746203787c/m/1/690f4c77-ed42-46b5-a58f-dad7ebc0ca17.png" /> <strong style="padding-left: 20px">MTL image 1</strong></a>
+
+      <a class="list-group-item list-group-item-action" id="list-home-list" data-toggle="list" href="#list-home" role="tab" aria-controls="home"><image width="20%" onclick="javascript:chosen('http://image.s4.exct.net/lib/fe8e1574746203787c/m/1/4c73b248-ab34-4ac7-9cf1-4f15ab894f97.png')" src="http://image.s4.exct.net/lib/fe8e1574746203787c/m/1/4c73b248-ab34-4ac7-9cf1-4f15ab894f97.png" /><strong style="padding-left: 20px">MTL image 2</strong></a>
+
+      <a class="list-group-item list-group-item-action" id="list-home-list" data-toggle="list" href="#list-home" role="tab" aria-controls="home"><image width="20%" onclick="javascript:chosen('http://image.s4.exct.net/lib/fe8e1574746203787c/m/1/690f4c77-ed42-46b5-a58f-dad7ebc0ca17.png')" src="http://image.s4.exct.net/lib/fe8e1574746203787c/m/1/690f4c77-ed42-46b5-a58f-dad7ebc0ca17.png" /> <strong style="padding-left: 20px">MTL image 1</strong></a>
+       </div>
+  </div>
+
 </div>
 
 
-</center>
 
-</body>
 
-   
-
+ <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 
 
 
@@ -105,5 +76,5 @@ function chosen(image) {
 
       
     </script>
-
+</body>
 </html>
