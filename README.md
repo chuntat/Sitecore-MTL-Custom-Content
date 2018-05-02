@@ -3,7 +3,7 @@
 ## Changelog:
 - v1: 	Draft project skeleton
 - v2: 	Improved version with image presented in a list format
-- v2.2:	checkbox for scale to fit and align to center will automatically make changes to content block 
+- v2.1:	checkbox for scale to fit and align to center will automatically make changes to content block 
 
 
 ## Introduction:
@@ -22,7 +22,7 @@ Basically there are a couple of files in this Github repo where you can use.
 	- Required to run these static HTML pages on Heroku
 
 - Index.html
-	- This is where all the action takes place. Contains the javascript, html, etc. Currently this is not pulling data from Sitecore at all. All images URL are hardcoded.
+	- This is where all the action takes place. Contains the javascript, html, etc. Currently this is not pulling data from Sitecore at all. All images URL are hardcoded. 
 
 - DragIcon.png
 	- You must strictly follow this naming convention as this is how MC recognise which image to be used as drag icon
@@ -35,6 +35,11 @@ Basically there are a couple of files in this Github repo where you can use.
 
 - Package.json
 	- Part of the SDK 
+
+
+## Roadmap:
+- REST API integtation with a Sitecore instance
+
 
 # Important Note
 
