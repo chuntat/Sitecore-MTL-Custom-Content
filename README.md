@@ -1,4 +1,4 @@
-# Salesforce Custom Content Block SDK - Sitecore Mock up
+# Salesforce Custom Content Block SDK - Sitecore Mock up v2.1
 
 Hi my name is Chun Tat (CT), Solution Engineer in covering Asia markets. If you're here, it should mean that you're interested to get Sitecore content blocks into your Email Studio Editor. You will also need to create an Installed Package in your MC Account and a new Heroku project to host this.
 
