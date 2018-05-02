@@ -3,7 +3,7 @@
 ## Changelog:
 - v1: 	Draft project skeleton
 - v2: 	Improved version with image presented in a list format
-- v2.1:	checkbox for scale to fit and align to center will automatically make changes to content block 
+- v2.2:	checkbox for scale to fit and align to center will automatically make changes to content block 
 
 
 ## Introduction:
