@@ -1,9 +1,9 @@
 # Salesforce Custom Content Block SDK - Sitecore Mock up v2.1
 
 Changelog:
-v1: 	Draft project skeleton
-v2: 	Improved version with image presented in a list format
-v2.1:	checkbox for scale to fit and align to center will automatically make changes to content block 
+- v1: 	Draft project skeleton
+- v2: 	Improved version with image presented in a list format
+- v2.1:	checkbox for scale to fit and align to center will automatically make changes to content block 
 
 
 Hi my name is Chun Tat (CT), Solution Engineer in covering Asia markets. If you're here, it should mean that you're interested to get Sitecore content blocks into your Email Studio Editor. You will also need to create an Installed Package in your MC Account and a new Heroku project to host this.
