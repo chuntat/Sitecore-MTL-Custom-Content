@@ -67,16 +67,24 @@ Select an image to from Sitecore CMS
 
 	<script src="/blocksdk.js"></script>
 
-    <script>
+  <script>
+
+    var selectedImageId, image;
 
 function chosen(imgId) {
   
+
   var sdk = new window.sfdc.BlockSDK();
   var fit = document.getElementById('scalefit').checked;
   var acenter = document.getElementById('acenter').checked;
-  var image = document.getElementById(imgId).src;
   
-  //alert(image);
+  selectedImageId = imgId;
+
+  if(imgId != ""){
+    image = document.getElementById(imgId).src;
+  }
+
+  alert(image);
 
   sdk.setContent(""); //resets content block
 
